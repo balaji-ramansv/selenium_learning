@@ -1,0 +1,20 @@
+from selenium.webdriver.common.by import By
+
+class TheGoldBugsPageLocators:
+    form = (By.TAG_NAME, 'form')
+    first_name_text = (By.NAME, "fname")
+    last_name_text = (By.NAME, "lname")
+    email_text = (By.ID, "email-yui_3_17_2_1_1664570076619_2728-field")
+    subject_text = (By.ID, "text-yui_3_17_2_1_1664570076619_2729-field")
+    message_text = (By.ID, "textarea-yui_3_17_2_1_1664570076619_2730-field")
+    no_response_required_checkbox = (By.XPATH, '//span[text() = "No Response Required"]')
+    response_required_checkbox = (By.XPATH, '//span[text() = "Response Required"]')
+    public_show_radio = (By.XPATH, '//span[text() = "Public Show"]')
+    private_show_radio = (By.XPATH, '//span[text() = "Private Show"]')
+    info_source_dropdown = (By.ID, 'select-e1f50715-c8a7-48eb-bc99-2c245676068c-field')
+    strongly_disagree_radio = (By.XPATH, '//label[text() = "Strongly Disagree"]')
+    disagree_radio = (By.XPATH, '//label[text() = "Disagree"]')
+    neutral_radio = (By.XPATH, '//label[text() = "Neutral"]')
+    agree_radio = (By.XPATH, '//label[text() = "Agree"]')
+    strongly_agree_radio = (By.XPATH, '//label[text() = "Strongly Agree"]')
+    thank_you_label = (By.XPATH, '//p[text() = "Thanks to all the people in the world who use their knowledge and skills to help others."]')
